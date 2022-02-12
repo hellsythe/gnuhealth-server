@@ -1,0 +1,22 @@
+version: '3.7'
+
+services:
+
+  gnuhealth:
+    build:
+        context: .
+    networks:
+      - servers
+    volumes:
+        - ./tmp:/tmp
+        - ./etc/postgresql/12/main/pg_hba.conf:/etc/postgresql/12/main/pg_hba.conf
+        - db:/var/lib/postgresql
+    ports:
+        - '8000:8000'
+networks:
+  servers:
+    driver: bridge
+
+volumes:
+  db:
+    driver: local
