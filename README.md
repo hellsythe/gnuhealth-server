@@ -1,7 +1,5 @@
 # Instalación GNU Health
 
-****
-
 **Es necesario tener docker y docker-compose instalado**
 
 Ejecutar el comando para levantar el contenedor
@@ -35,3 +33,13 @@ Correr gnuhealth server
 Instalar el cliente gnuhealth
 
 https://en.wikibooks.org/wiki/GNU_Health/Installation
+
+****
+
+Volver a levantar el contenedor en caso de hacer el down
+
+`cd tmp/ && ./install.sh`
+
+Ejecutar
+
+`./run.sh`
